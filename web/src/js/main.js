@@ -446,25 +446,25 @@ function animate() {
 }
 var modelList = [
             {
-                name: "crash.obj", url: 'sample_models/crash2.obj'
+                name: "20230202_TSP_Onguri.obj", url: 'sample_models/20230202_TSP_Onguri.obj'
             },
-            {
-                name: "bear.obj", url: 'sample_models/bear-obj.obj'
-            },
-            {
-                name: "car.obj", url: 'sample_models/car2.obj'
-                //, objectRotation: new THREE.Euler(0, 3 * Math.PI / 2, 0)
+            // {
+            //     name: "bear.obj", url: 'sample_models/bear-obj.obj'
+            // },
+            // {
+            //     name: "car.obj", url: 'sample_models/car2.obj'
+            //     //, objectRotation: new THREE.Euler(0, 3 * Math.PI / 2, 0)
                         
-            },
-            {
-                name: "tiger.obj", url: 'sample_models/Tiger.obj'
-            },
-            {
-                name: "dinosaur.obj", url: 'sample_models/Dinosaur_V02.obj'
-            },
-            {
-                name: "skeleton.obj", url: 'sample_models/skeleton.obj'
-            }
+            // },
+            // {
+            //     name: "tiger.obj", url: 'sample_models/Tiger.obj'
+            // },
+            // {
+            //     name: "dinosaur.obj", url: 'sample_models/Dinosaur_V02.obj'
+            // },
+            // {
+            //     name: "skeleton.obj", url: 'sample_models/skeleton.obj'
+            // }
 ];
 
 function switchScene(index) {

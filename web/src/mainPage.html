@@ -120,17 +120,17 @@ js import
                 <li id="header">
                     <table style="width:100%">
                         <tr>
-                            <th style="font-size: 15px;">Viewer Theme</th>
-                            <th style="font-size: 11px;"><button id="lightSkin">Light</button></th>
-                            <th style="font-size: 11px;"><button id="darkSkin">Dark</button></th>
+                            <th style="font-size: 15px;">TSPXR Online 3D Web Viewer</th>
+                            <!-- <th style="font-size: 11px;"><button id="lightSkin">Light</button></th>
+                            <th style="font-size: 11px;"><button id="darkSkin">Dark</button></th> -->
                         </tr>
                     </table>
                 </li>
 
                 <li class='dropdown'>
-                    <a href='#'><img src="images/dir_light_icon.png" class="image" /> Lighting</a>
+                    <a href='#'><img src="images/dir_light_icon.png" class="image" /> 조명</a>
                     <ul>
-                        <li><span>Ambient Light</span></li>
+                        <li><span>주변광(Ambient Light) 설정</span></li>
                         <li>
                             <label class="switch">
                                 <input class="check" type="checkbox" id="ambient_light">
@@ -145,7 +145,7 @@ js import
                         <li><div id="ambient_blue"></div></li>
 
                         <li><hr style="margin-top:15px"/></li>
-                        <li>Directional Light Colour</li>                 
+                        <li>원거리(무한대) 광원</li>                 
                             <li><span style="font-size: 12px">R</span></li>
                             <li><div id="red"></div></li>
                             <li><span style="font-size: 12px">G</span></li>
@@ -154,7 +154,7 @@ js import
                             <li><div id="blue"></div></li>                           
                         
                             <li><hr style="margin-top:15px" /></li>
-                            <li>Point Light Intensity</li>
+                            <li>포인트 광원</li>
                             <li><span style="font-size: 12px">Intensity Value</span></li>
                             <li><div id="point_light"></div></li>   
                     </ul>                   
@@ -162,16 +162,16 @@ js import
 
 
                 <li class='dropdown'>
-                    <a href='#'><img src="images/wireframe_cube.png" class="image" />Wireframe View</a>
+                    <a href='#'><img src="images/wireframe_cube.png" class="image" />와이어프레임</a>
                     <ul>
-                        <li><span>Wireframe</span></li>
+                        <li><span>와이어프레임</span></li>
                         <li>
                             <label class="switch">
                                 <input class="check" type="checkbox" name="mod_mat" id="wire_check">
                                 <span class="toggle round"></span>
                             </label>
                         </li>
-                        <li><span>Model + Wireframe</span></li>
+                        <li><span>모델 + 와이어프레임</span></li>
                         <li>
                             <label class="switch">
                                 <input class="check" type="checkbox" name="mod_mat" id="model_wire">
@@ -182,9 +182,9 @@ js import
                 </li>
 
                 <li class='dropdown'>
-                    <a href='#'><img src="images/phong_icon.png" class="image" />Phong Shading</a>
+                    <a href='#'><img src="images/phong_icon.png" class="image" />Phong 셰이딩</a>
                     <ul>
-                        <li> <span>Phong Shading </span></li>
+                        <li> <span>Phong 셰이딩 </span></li>
 
                         <li>
                             <label class="switch">
@@ -199,7 +199,7 @@ js import
                 </li>
 
                 <li class='dropdown'>
-                    <a href='#'><img src="images/XRay.png" class="image" />X-Ray Shading</a>
+                    <a href='#'><img src="images/XRay.png" class="image" />X-Ray 셰이딩</a>
                     <ul>
                         <li> <span>X-Ray </span></li>
                         <li>
@@ -212,7 +212,7 @@ js import
                 </li>
 
                 <li class='dropdown'>
-                    <a href='#'><img src="images/glowing.png" width="32" height="32" class="image" />Glow Outline</a>
+                    <a href='#'><img src="images/glowing.png" width="32" height="32" class="image" />Glow 외곽선 효과</a>
                     <ul>
                         <li> <span>Glow Outline</span></li>
                         <li>
@@ -222,10 +222,10 @@ js import
                             </label>
                         </li>
 
-                        <li><span style="font-size: 12px">edgeStrength</span></li>
+                        <li><span style="font-size: 12px">에지 강도</span></li>
                         <li><div id="edgeStrength"></div></li>
 
-                        <li> <span>Set Glow Colour</span></li>
+                        <li> <span>외곽선 색 설정</span></li>
                         <li><input type='text' class="glow_select" /></li>
                         <li><em id='basic-log'></em></li>
                     </ul>
@@ -242,38 +242,38 @@ js import
                             </label>
                         </li>
                     </ul>
-                </li>
+                </li> 
 
                 <li class='dropdown'>
-                    <a href='#'><img src="images/colour_pick.png" class="image" />Set Background</a>
+                    <a href='#'><img src="images/colour_pick.png" class="image" />배경색 설정</a>
                     <ul>
-                        <li> <span>Set Background Colour</span></li>
+                        <li> <span>배경색 선택</span></li>
                         <li><input type='text' class="bg_select" /></li>
                         <li><em id='basic_log'></em></li>
                     </ul>
                 </li>
 
                 <li class='dropdown'>
-                    <a href='#'><img src="images/folder_icon.png" class="image" />Select/Drop Model File</a>
+                    <a href='#'><img src="images/folder_icon.png" class="image" />모델 불러오기/제거</a>
                     <ul>
-                        <li style="background: #d9d9f2; color: black; text-align: center">Select from button or drag and drop model onto the viewer</li>
+                        <li style="background: #d9d9f2; color: black; text-align: center">불러올 모델을 선택하거나 드래그-앤-드롭하여 불러오기</li>
 
                         <li style="margin-top: 12px; margin-bottom: 16px;">
                              <label for="obj_file" class="model-upload">
-                                 <i style="margin-right: 5px;" class="fa fa-upload"></i> Load Model 
+                                 <i style="margin-right: 5px;" class="fa fa-upload"></i> 모델 불러오기
                             </label>
-                            <button class="qBtn" id="q_btn" title="Model Loading Help"><i class="fa fa-question-circle q_mark"></i></button>
+                            <!-- <button class="qBtn" id="q_btn" title="Model Loading Help"><i class="fa fa-question-circle q_mark"></i></button> -->
                         </li>                  
                         <li><input onclick="this.value=null;" type="file" id="obj_file" /></li>                       
 
                         <li style="margin-top: 12px; margin-bottom: 16px;">
                             <label for="modelPlusTexture" class="model-upload">
-                                <i style="margin-right: 5px;" class="fa fa-upload"></i> Model and Textures
+                                <i style="margin-right: 5px;" class="fa fa-upload"></i> 모델과 텍스처 불러오기
                             </label>                          
                         </li>         
                         <li><input id="modelPlusTexture" type="file" name="files[]" multiple="" class="model-upload"></li>
 
-                        <li><button type="button" id="remove"><i style="margin-right: 5px;" class="fa fa-trash"></i> Remove file</button></li>
+                        <li><button type="button" id="remove"><i style="margin-right: 5px;" class="fa fa-trash"></i> 모델 제거</button></li>
                         <li><output id="result" /></li>
                     </ul>
                 </li>
@@ -321,11 +321,11 @@ js import
         <div id="bottom_menu">
             <ul class="bottom_menu_item">
                 <li class='dropdown'>
-                    <a href='#'><img src="images/rotation.png" class="image" />Model Rotation</a>
+                    <a href='#'><img src="images/rotation.png" class="image" />모델 회전</a>
                     <ul>
-                        <li style="display:inline-block;  margin:0 35px 0 0;"><span>Auto Rotate</span></li>
+                        <li style="display:inline-block;  margin:0 35px 0 0;"><span>자동 회전</span></li>
                         <li style="display:inline-block">
-                            <span>Set Rotation Speed</span>
+                            <span>회전 속도</span>
                             <span id="rot_slider"></span>
                         </li>
                         <li>
@@ -357,7 +357,7 @@ js import
                 </li>
 
                 <li class='dropdown'>
-                    <a href='#'><img src="images/scale.png" class="image" />Transform Model</a>
+                    <a href='#'><img src="images/scale.png" class="image" />모델 변환</a>
                     <ul>
                         <li style="margin-left:25px; font-size: 15px">
                             <label for="transform">
@@ -379,31 +379,31 @@ js import
                 </li>
 
                 <li class='dropdown'>
-                    <a href='#'><img src="images/grid.png" class="image" />Model View Helpers</a>
+                    <a href='#'><img src="images/grid.png" class="image" />시각화 툴</a>
                     <ul style="font-size: 13.5px">
                         <li style="display:inline-block; margin:0 25px 0 0;">
-                            <span style="font-size:18px">Grid</span>
+                            <span style="font-size:18px">그리드</span>
                             <label class="switch helper">
                                 <input type="checkbox" id="grid">
                                 <span class="toggle grid round"></span>
                             </label>
                         </li>
                         <li style="display:inline-block; margin:0 25px 0 0;">
-                            <span style="font-size:18px">Polar-grid</span>
+                            <span style="font-size:18px">극좌표계</span>
                             <label class="switch helper">
                                 <input type="checkbox" id="polar_grid">
                                 <span class="toggle grid round"></span>
                             </label>
                         </li>
                         <li style="display:inline-block; margin:0 25px 0 0;">
-                            <span style="font-size:18px">Axis</span>
+                            <span style="font-size:18px">직교좌표계</span>
                             <label class="switch helper">
                                 <input type="checkbox" id="axis">
                                 <span class="toggle grid round"></span>
                             </label>
                         </li>
                         <li style="display:inline-block; margin:0 25px 0 0;">
-                            <span style="font-size:18px">Model Box</span>
+                            <span style="font-size:18px">모델 박스</span>
                             <label class="switch helper">
                                 <input type="checkbox" id="bBox">
                                 <span class="toggle grid round"></span>
@@ -424,16 +424,12 @@ js import
         </div>
 
         <div id="sampleMods">
-            Sample Models
+            예제 샘플
             <br />
             <div class="select">
                 <select id="scenes_list" onchange="selectModel();">
-                    <option>Crash Model (165 KB)</option>
-                    <option>Bear Model (113 KB)</option>
-                    <option>Car Model (1.33 MB)</option>
-                    <option>Tiger Model (3.77 MB)</option>
-                    <option>Dinosaur Model (5.07 MB)</option>
-                    <option>Skeleton Model (5.52 MB)</option>
+                    <option>TSPXR-Onguri</option>
+
                 </select>
                 <br /><br />
             </div>
